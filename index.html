@@ -13,6 +13,8 @@ EMAIL: emilytt4@uci.edu
   <meta name="viewport" content="width=devicewidth,initial-scale=1">
   <link rel="stylesheet" href="my-style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>Emily Tran's Portfolio</title>
@@ -32,17 +34,98 @@ EMAIL: emilytt4@uci.edu
   <section>
       <h2>Welcome to my portfolio!</h2>
       <p>Hi, I'm Emily Tran. I am a third-year Computer Science major at UC Irvine specializing in Intelligent Systems. This website includes information about my work, my interests, and myself.</p>
-  </section>
-
-  <section>
-      <h3> <span class="material-icons">star</span> Hello!</h3>
       <img src="image2.JPG" alt="This image represents me." width="300">
-      <img src="image.png" alt="This image also represents me." width="300">
+      <p></p>
+      <audio controls autoplay style="width: 100%; max-width: 500px; margin-top: 20px;">
+        <source src="Love-Me-Not.mp3" type="audio/mpeg">
+        <source src="Love-Me-Not.ogg" type="audio/ogg">
+        Your browser does not support the audio element. Please download the audio file to listen.
+      </audio>
+    </section>
+
+  <section id="experience">
+    <h3> <span class="material-icons">work</span>My Experience</h3>
+    <article>
+      <h4>Raytheon Technologies</h4>
+      <p><strong>Engineering Intern</strong> | June 2024 - September 2024</p>
+      <ul>
+        <li>Enhanced Python and Anaconda-based machine learning algorithms to predict F-22 flight module failures, improving automatic visualization generation.</li>
+        <li>Developed Python scripts for module failure detection, filtering out false alarms and generating detailed Excel reports.</li>
+        <li>Worked with DevOps tools including Jira, OneNote, and Confluence; gained proficiency in Jenkins and Bitbucket.</li>
+        <li>Updated and created Jenkins nodes for lab PCs, automated Jenkins scripts, and enhanced user input interfaces.</li>
+      </ul>
+      <p><strong>Engineering Intern</strong> | June 2023 - September 2023</p>
+      <ul>
+        <li>Created Web APIs and ASP.NET web forms to access and update data via Microsoft Entity Framework using C#, JavaScript, SQL, and HTML.</li>
+        <li>Automated executable shell scripts, generating results and log files using Jenkins and Jira.</li>
+        <li>Debugged and updated F-22 Infrastructure Databases on Microsoft Access and Visual Studio.</li>
+        <li>Performed hardware module tests using Common Automated Test Stations and other test equipment.</li>
+      </ul>
+    </article>
+    
+    <article>
+      <h4>UCI - University Neurocognitive Imaging (UNI)</h4>
+      <p><strong>Undergraduate Student Researcher</strong> | April 2024 - Present</p>
+      <ul>
+        <li>Applied AUC ROC analysis using MATLAB to evaluate thresholds for distinguishing between normal controls and brain-injured patients.</li>
+        <li>Performed statistical analysis on brain injury data with Statistical Parametric Mapping (SPM) algorithms.</li>
+        <li>Worked with Python, Jupyter Notebook, and Anaconda for leave-one-out analysis and image generation.</li>
+      </ul>
+    </article>
+  </section>
+  
+  <section id="projects">
+    <h3><span class="material-icons">folder_open</span>My Projects</h3>
+    <article>
+      <h4>Fashion-MNIST Classifiers</h4>
+      <p><em>March 2024</em></p>
+      <ul>
+        <li>Developed a Python-based machine learning project to classify clothing from images in the Fashion-MNIST dataset.</li>
+        <li>Utilized TensorFlow/Keras, NumPy, and Matplotlib to implement and assess classifiers, including neural networks and logistic regression.</li>
+      </ul>
+    </article>
+    <article>
+      <h4><a href="https://devpost.com/software/wonder-wise" target="_blank">IrvineHacks</a></h4>
+      <p><em>January 2024</em></p>
+      <ul>
+        <li>Led a team to develop a website generating personalized travel itineraries based on user inputs.</li>
+        <li>Designed the front-end with HTML, CSS, and Figma; implemented the back-end with Python, TypeScript, Next.js, and React.</li>
+      </ul>
+    </article>
   </section>
 
-  <section>
-    <h3> <span class="material-icons">favorite</span> Snowboarding</h3>
-    <img src="image.JPG" alt="My friend and I snowboarding!" width="600">
+  <section id="resume">
+    <h3> <span class="material-icons">assignment</span>My Resume</h3>
+    <div class="resume-container">
+      <object data="resume.pdf" type="application/pdf" width="33%" height="600">
+        <p>Your browser does not support PDFs. 
+           <a href="resume.pdf" download>Download the resume</a> instead.
+        </p>
+      </object>
+    </div>
+    <a href="resume.pdf" class="btn btn-primary" target="_blank" download>Download Resume</a>
+  </section>
+
+  <section id="contact-form">
+    <h3><span class="material-icons">mail</span>Contact Me</h3>
+    <form action="submit-form.php" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required aria-label="Full Name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required aria-label="Email Address">
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required aria-label="Message"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
   </section>
 
 </main>
