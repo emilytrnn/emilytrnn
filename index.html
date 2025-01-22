@@ -35,7 +35,7 @@ EMAIL: emilytt4@uci.edu
   <section>
       <h2>Welcome to my portfolio!</h2>
       <p>Hi, I'm Emily Tran. I am a third-year Computer Science major at UC Irvine specializing in Intelligent Systems. This website includes information about my work, my interests, and myself.</p>
-      <img src="image2.JPG" alt="This image represents me." width="300">
+      <img src="image2.jpg" alt="This image represents me." width="300">
       <p></p>
       <audio controls autoplay style="width: 100%; max-width: 500px; margin-top: 20px;">
         <source src="Love-Me-Not.mp3" type="audio/mpeg">
@@ -95,16 +95,24 @@ EMAIL: emilytt4@uci.edu
     </article>
   </section>
 
-  <section id="resume">
-    <h3> <span class="material-icons">assignment</span>My Resume</h3>
-    <div class="resume-container">
-      <object data="resume.pdf" type="application/pdf" style="width: 33%; height: 600px;">
-        <p>Your browser does not support PDFs. 
-           <a href="resume.pdf" download>Download the resume</a> instead.
-        </p>
-      </object>
+  <section id="resume" class="my-5">
+    <h3><span class="material-icons">assignment</span>My Resume</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <object data="resume.pdf" type="application/pdf" class="w-100" style="height: 600px;">
+                            <p>Your browser does not support PDFs. 
+                               <a href="resume.pdf" download>Download the resume</a> instead.
+                            </p>
+                        </object>
+                    </div>
+                </div>
+              <a href="resume.pdf" class="btn btn-primary" target="_blank" download>Download Resume</a>
+          </div>
+        </div> 
     </div>
-    <a href="resume.pdf" class="btn btn-primary" target="_blank" download>Download Resume</a>
   </section>
 
   <section id="contact-form">
